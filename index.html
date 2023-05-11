@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untitled Goose Movie Database</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="/Users/ayshahmalik/Downloads/movieProject/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS -->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">`
+    <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
+    <link rel="stylesheet" href="/Users/ayshahmalik/Downloads/project1/style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="logo">
+    <a class="header-brand" href="index.html">
+      <img src="/Users/ayshahmalik/Downloads/movieProject/filmFindLogo.png" width="250" height="250" alt="">
+    </a>
+  </div>
+
+
+  <nav class="'navbar">
+      <div id="navbar-items">
+        <button class="navbar-item my-list-btn">My List</button>
+
+        <form id="searchForm" class="navbar-item">
+          <input id="searchBar" type="text" placeholder="What do you want to watch?">
+          <button id="submitButton">Search</button>
+        </form>
+
+      </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Oh no! We don't have that movie, please search for another!</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="body">
+
+    <div id="left-side">
+      <section id="my-list-box" class="hide">My List:<!-- My List Body -->
+        <ul id="my-list">
+        </ul>
+      </section>
+    </div>
+
+    <section class="body-box">
+      <button id="add-my-list">Add to My List</button>
+      <h2 class="movieTitle py-6 my-8 mt-4 pb-5"></h2>
+      <article class="castCrew">
+        <h2 id="actor">Starring:</h2>
+
+        <ul id="cast">
+        </ul>
+
+        <h3 id="director">Director:</h3>
+        <ul id="crew"></ul>
+      </article>
+      <div id="poster"> <!-- For Poster --> </div>
+
+
+    </section>
+
+    <div id="right-side"> <!-- Block for trailer and contemporary events -->
+
+      <div> <!-- For Trailer -->
+        <div id="trailer-box">
+          <h3>TRAILER: </h3>
+          <iframe id="trailer">TRAILER: </iframe>
+        </div>
+      </div>
+
+      <div id="currentEvents">Contemporary Events
+        <p class="fromWiki">Top Headlines from Wikipedia</p>
+        <ul id="newsPiece">
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="/Users/ayshahmalik/Downloads/movieProject/script.js"></script>
+</body>
+
+</html>
