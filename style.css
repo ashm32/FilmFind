@@ -1,0 +1,308 @@
+:root{
+    --bg: #c6c7c7;
+    --containerbg: #d68cbf;
+    --grey:#b1b4b6;
+}
+
+#navbar-items{
+    display: flex;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    background-color: var(--bg);
+    font-family: 'Verdana', 'Arial', 'Tahoma', 'Serif';
+}
+
+.movieTitle{
+   display:flex;
+   text-align: center;
+   font-size:30px ;
+   background-color: var(--containerbg);
+   border-radius: 15%;
+   border:5px solid black;
+   width: 39.5rem;
+   height: 0rem;
+   text-decoration: underline;
+   justify-content: center;
+   color: black;
+   flex-direction: column;
+   font-style: italic;
+   
+}
+
+#pageAc{
+    text-align: center;
+    font-size: 9rem;
+    color: rgb(243, 6, 25);
+    text-align: left;
+    text-shadow: 5px 5px 5px black;
+   
+    text-decoration: underline;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+   
+}
+
+.navbar-item{
+   display: inline-block;
+   left: 50%;
+   margin-left: 5rem;
+   top: -5rem;
+   
+}
+
+#searchBar{
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-style: solid;
+    width: 18rem;
+    border-color:black;
+    height: 3.3rem;
+    font-size: 20px;
+   
+}
+.my-list-btn, #add-my-list, #submitButton{
+    border: 4px solid black;
+    font-size: 1.3rem;
+    background-color: lightblue;
+    color: black;
+    width: 12rem;
+    text-align: center;
+   
+
+}
+.my-list-btn:hover, #add-my-list:hover, #submitButton:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 400%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.body-box{
+
+
+    box-sizing: border-box;
+    border: 4px solid lightblue;
+    border-style: solid;
+    width:25rem;
+    height: 50rem;
+    float: inline-start;
+    font-size: 1.2rem;
+    color:black;
+    width: 40rem ;
+  
+    display: block;
+
+    margin: 1rem;
+   
+}
+
+#actor{
+    font-weight: 200;
+    text-decoration: underline;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#director {
+    text-decoration: underline; 
+    font-weight: bold;
+    
+}
+#cast{
+    justify-content: center;
+    margin-left: 10px;
+    color: lightblue;
+    
+}
+#crew{
+    text-align: center;
+    margin-left: 10px;
+    color: lightblue;
+}
+.castCrew{
+    display: flex;
+    justify-content: space-around;
+
+}
+#poster{
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-top: 1rem;
+    width: auto;
+    height: fit-content;
+    
+}
+
+#my-list-box{
+    float: left;
+    border: 3px double lightblue;
+    color: black;
+    padding: 8px;
+    width: 250px;
+    font-size: 20px;
+
+}
+
+#trailer-box, #currentEvents{
+    border: 4px solid lightblue;
+    width: 36rem;
+    height: 25rem;
+    text-align: center;
+    color: lightblue;
+    justify-content: center;
+   
+
+    display: block;
+
+}
+
+#body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fromWiki{
+    color: black;
+    text-decoration: underline;
+    font-size: 18px ;
+}
+
+#right-side {
+    display: block;
+    margin: 1rem;
+}
+
+#left-side{
+    display: block;
+    margin: 1rem;
+}
+
+
+/****MODAL*****/
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(224, 214, 187);
+    /* Fallback color */
+    background-color: rgba(110, 106, 94, 0.4);
+    /* Black w/ opacity */
+}
+
+#poster {
+    text-align: center;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+/****MODAL*****/
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(224, 214, 187);
+    /* Fallback color */
+    background-color: rgba(110, 106, 94, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #333333;
+    border: 5px double lightblue;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* The Close Button */
+.close {
+    color: lightblue;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+@media screen and (max-width: 1175px) {
+
+    #navbar-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-item {
+        margin: 0;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    
+}
+
+#my-list > li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    color:lightblue;
+}
+a:hover {
+    text-decoration: underline;
+    color: mediumaquamarine;
+}
