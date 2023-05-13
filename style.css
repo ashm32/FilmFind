@@ -4,7 +4,7 @@
     --grey:#b1b4b6;
     --darkgrey:#292d30;
     --red:#b67575;
-    --hoverRed:#9f0000;
+    --hoverRed:#d195958b;
 }
 html, body{
     margin:0;
@@ -236,7 +236,7 @@ margin-left: 700px;
     width:100%;
 }
 #searchForm{
-    background-color: #d68cbf;
+    background-color: var(--darkgrey);
      }
 
 @media screen and (max-width: 1175px) {
@@ -346,7 +346,7 @@ a:hover {
     color: var(--darkgrey);
   }
   .fa-solid:hover{
-    color: var(--grey);
+    color: var(--red);
   }
   
 .divider {
