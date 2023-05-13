@@ -3,11 +3,6 @@
     --containerbg: #d68cbf;
     --grey:#b1b4b6;
 }
-
-#navbar-items{
-    display: flex;
-}
-
 html, body{
     margin:0;
     padding:0;
@@ -15,33 +10,9 @@ html, body{
     font-family: 'Verdana', 'Arial', 'Tahoma', 'Serif';
 }
 
-.divider {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    background-color: #343a40;
-    color: white;
-    margin-bottom: 25px;
-    font-weight: bold;
-  }
-
-  .imagesCard {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    display: inline-flex;
-    justify-content: space-around;
-  }
-
-  .card-title {
-    font-weight: bold;
-  }
-
+.logo{
+margin-left: 700px;
+}
 .movieTitle{
    display:flex;
    text-align: center;
@@ -71,14 +42,6 @@ html, body{
     flex-direction: column;
 
 
-   
-}
-
-.navbar-item{
-   display: inline-block;
-   left: 50%;
-   margin-left: 5rem;
-   top: -5rem;
    
 }
 
@@ -303,13 +266,22 @@ html, body{
     display: block;
 }
 
+#navbar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+#searchForm{
+    background-color: #d68cbf;
+     }
 
 @media screen and (max-width: 1175px) {
-
     #navbar-items {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width:100%;
     }
 
     .navbar-item {
@@ -317,8 +289,7 @@ html, body{
         top: 0;
         left: 0;
         text-align: center;
-    }
-    
+    }    
 }
 
 #my-list > li:hover {
@@ -333,3 +304,111 @@ a:hover {
     text-decoration: underline;
     color: mediumaquamarine;
 }
+/* SIGN UP/IN  */
+  form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0rem 5rem;
+    overflow: hidden;
+    }
+  
+ 
+    .message {
+      font-size: 1.2rem;
+      color: rgb(78, 78, 78);
+      margin-bottom: 10px;
+    }
+    
+    .input {
+      max-width: 380px;
+      width: 100%;
+      background-color: #f1cac8;
+      margin: 10px 0;
+      height: 55px;
+      border-radius: 40px;
+      display: grid;
+      grid-template-columns: 15% 85%;
+      padding: 0 0.4rem;
+      position: relative;
+    }
+    
+    .input i {
+      text-align: center;
+      line-height: 60px;
+      color:  rgb(208, 110, 110);
+      transition: 0.5s;
+      font-size: 1.1rem;
+    }
+  
+      
+    .input input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: rgb(78, 78, 78);
+    }
+    
+  
+  
+  .button{
+    width: 120px;
+    height: 20;
+    border: none;
+    border-radius: 30px;
+    outline:none;
+    color: rgb(255, 255, 255);
+    background-color: #636c71;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .button:hover{
+    background-color: #959aa0 ;
+  }
+  
+  
+  .account {
+    display: grid;
+    grid-template-columns: 1fr;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  }
+
+  .fa-solid{
+    color: #e15c5c;
+  }
+  .fa-solid:hover{
+    color: #d68c8c;
+  }
+  
+.divider {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #343a40;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  .imagesCard {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
