@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">`
     <!-- This stylesheet is an example of how you can add your own stylesheet to customize bootstrap components. Notice how it is loaded 2nd to the required bootstrap stylesheet. This is so our stylesheet will overwrite bootstrap classes when we apply the same class but different styles to the stylsheet -->
     <link rel="stylesheet" href="style.css">
-  
+    <script src="https://kit.fontawesome.com/188d621110.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
@@ -22,22 +22,33 @@
 
   <div class="logo">
     <a class="header-brand" href="index.html">
-      <img src="filmFindLogo.png" width="250" height="250" alt="">
+      <img src="filmFindLogo.png" width="250px" height="250px" alt="">
     </a>
   </div>
 
 
-  <nav class="'navbar">
-      <div id="navbar-items">
-        <button class="navbar-item my-list-btn">My List</button>
+<!-- Account page -->
+<div class="accountContainer">
+  <div class="row">
+    <div class="col-lg-6 h-100 text-center mx-auto">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item mr-1">
+          <a href="/Users/ayshahmalik/Downloads/movieProject/account.html">
+            <i class="fa-solid fa-user fa-2xl"></i></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+  <div class="navbar">
+      <div id="navbar-items">
         <form id="searchForm" class="navbar-item">
           <input id="searchBar" type="text" placeholder="What do you want to watch?">
           <button id="submitButton">Search</button>
         </form>
-
+        <button class="myList-item my-list-btn">My List</button>
       </div>
-
       <!-- Modal -->
       <div id="myModal" class="modal">
         <div class="modal-content">
@@ -46,7 +57,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </div>
 
   <div id="body">
 
@@ -93,67 +104,7 @@
     </div>
 
   </div>
-  
-    <!-- Bootstrap cards -->
-  <div class="divider" id="my-projects">
-    <div style="border-bottom: 1px solid black;">Our Top 6 of the month</div>
-  </div>
 
-  <div class="imagesCard">
-    <div class="card" style="width: 18rem;">
-    <img src="./top5/suzume.jpeg" class="card-img-top" alt="an image with gold and black background with written project 1 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 1 - Suzume</h5>
-      <p class="card-text">Suzume sees director Makoto Shinkai falling just a bit short of the bar set by but when the results are this impactful, it's hard to find much fault.</p>
-      <a href="https://antoninogambino.github.io/prework-study-guide/" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="./top5/loveagain.jpeg" class="card-img-top" alt="an image with gold and black background with written project 2 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 2 - Love Again</h5>
-      <p class="card-text">What if a random text message led to the love of your life? In this romantic comedy, dealing with the... [Read More]</p>
-      <a href="https://antoninogambino.github.io/Horiseon-challenge-wk1/" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="./top5/discontinued.jpeg" class="card-img-top" alt="an image with gold and black background with written project 3 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 3 - Discontinued</h5>
-      <p class="card-text">With an AI guide, Sarah navigates the end of the world as she knows it while charting an unlikely course toward self-actualization.</p>
-      <a href="https://antoninogambino.github.io/Travel-California/" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="./top5/peterpan.jpeg" class="card-img-top" alt="an image with gold and black background with written project 4 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 4 - Peter Pan & Wendy</h5>
-      <p class="card-text">Fidelity to the animated classic from achieving Neverland, giving rendition some of its own magic.</p>
-      <a href="https://antoninogambino.github.io/my-portfolio/" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="./top5/65.jpeg" class="card-img-top" alt="an image with gold and black background with written project 5 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 5 - 65</h5>
-      <p class="card-text">After a catastrophic crash on an unknown planet, pilot Mills quickly discovers he’s actually stranded on Earth 65 million years ago.</p>
-      <a href="#" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="./top5/theartificegirl.jpeg" class="card-img-top" alt="an image with gold and black background with written project 6 inside a white square in the center of the image">
-    <div class="card-body">
-      <h5 class="card-title">Top 6 - The Artifice Girl</h5>
-      <p class="card-text">The Artifice Girl blends timely themes and a sci-fi structure to explore thought-provoking questions surrounding the ethics of artificial intelligence.</p>
-      <a href="#" class="btn btn-primary">Add to list</a>
-    </div>
-  </div>
-</div>
 
   <!-- Bootstrap cards -->
   <div class="divider" id="my-projects">
@@ -166,8 +117,6 @@
     <div class="card-body">
       <h5 class="card-title">Top 1 - Suzume</h5>
       <p class="card-text">Suzume sees director Makoto Shinkai falling just a bit short of the bar set by but when the results are this impactful, it's hard to find much fault.</p>
-      <a href="https://antoninogambino.github.io/prework-study-guide/" class="btn btn-primary">Add to list</a>
-    </div>
   </div>
 
   <div class="card" style="width: 18rem;">
@@ -175,8 +124,6 @@
     <div class="card-body">
       <h5 class="card-title">Top 2 - Love Again</h5>
       <p class="card-text">What if a random text message led to the love of your life? In this romantic comedy, dealing with the... [Read More]</p>
-      <a href="https://antoninogambino.github.io/Horiseon-challenge-wk1/" class="btn btn-primary">Add to list</a>
-    </div>
   </div>
 
   <div class="card" style="width: 18rem;">
@@ -184,8 +131,6 @@
     <div class="card-body">
       <h5 class="card-title">Top 3 - Discontinued</h5>
       <p class="card-text">With an AI guide, Sarah navigates the end of the world as she knows it while charting an unlikely course toward self-actualization.</p>
-      <a href="https://antoninogambino.github.io/Travel-California/" class="btn btn-primary">Add to list</a>
-    </div>
   </div>
 
   <div class="card" style="width: 18rem;">
@@ -193,8 +138,6 @@
     <div class="card-body">
       <h5 class="card-title">Top 4 - Peter Pan & Wendy</h5>
       <p class="card-text">Fidelity to the animated classic from achieving Neverland, giving rendition some of its own magic.</p>
-      <a href="https://antoninogambino.github.io/my-portfolio/" class="btn btn-primary">Add to list</a>
-    </div>
   </div>
 
   <div class="card" style="width: 18rem;">
@@ -202,17 +145,13 @@
     <div class="card-body">
       <h5 class="card-title">Top 5 - 65</h5>
       <p class="card-text">After a catastrophic crash on an unknown planet, pilot Mills quickly discovers he’s actually stranded on Earth 65 million years ago.</p>
-      <a href="#" class="btn btn-primary">Add to list</a>
-    </div>
   </div>
 
   <div class="card" style="width: 18rem;">
     <img src="./top5/theartificegirl.jpeg" class="card-img-top" alt="an image with gold and black background with written project 6 inside a white square in the center of the image">
     <div class="card-body">
       <h5 class="card-title">Top 6 - The Artifice Girl</h5>
-      <p class="card-text">The Artifice Girl blends timely themes and a sci-fi structure to explore thought-provoking questions surrounding the ethics of artificial intelligence.</p>
-      <a href="#" class="btn btn-primary">Add to list</a>
-    </div>
+      <p class="card-text">The Artifice Girl blends timely themes and a sci-fi structure to explore thought-provoking questions surrounding the ethics of artificial intelligence.</p>    </div>
   </div>
 </div>
 
