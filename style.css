@@ -265,7 +265,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
-    color: var(--hoverRed);
+    color: var(--red);
 }
 /* SIGN UP/IN  */
   form{
