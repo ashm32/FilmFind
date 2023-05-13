@@ -2,6 +2,8 @@
     --bg: #c6c7c7;
     --containerbg: #d68cbf;
     --grey:#b1b4b6;
+    --red:#9f0000;
+    --hoverRed:#ec9c9c;
 }
 html, body{
     margin:0;
@@ -11,13 +13,14 @@ html, body{
 }
 
 .logo{
-margin-left: 1000px;
+margin-left: 700px;
 }
+
 .movieTitle{
    display:flex;
    text-align: center;
    font-size:30px ;
-   background-color: var(--containerbg);
+   background-color: var(--red);
    border-radius: 15%;
    border:5px solid black;
    width: 39.5rem;
@@ -26,23 +29,7 @@ margin-left: 1000px;
    justify-content: center;
    color: black;
    flex-direction: column;
-   font-style: italic;
-   
-}
-
-#pageAc{
-    text-align: center;
-    font-size: 9rem;
-    color: rgb(243, 6, 25);
-    text-align: left;
-    text-shadow: 5px 5px 5px black;
-   
-    text-decoration: underline;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-
-   
+   font-style: italic;  
 }
 
 #searchBar{
@@ -58,7 +45,7 @@ margin-left: 1000px;
 .my-list-btn, #add-my-list, #submitButton{
     border: 4px solid black;
     font-size: 1.3rem;
-    background-color: lightblue;
+    background-color: var(--red);
     color: black;
     width: 12rem;
     text-align: center;
@@ -67,7 +54,7 @@ margin-left: 1000px;
 }
 .my-list-btn:hover, #add-my-list:hover, #submitButton:hover{
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: var(--hoverRed);
     color: black;
     font-weight: 400%;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -75,10 +62,8 @@ margin-left: 1000px;
 }
 
 .body-box{
-
-
     box-sizing: border-box;
-    border: 4px solid lightblue;
+    border: 4px solid var(--hoverRed);
     border-style: solid;
     width:25rem;
     height: 50rem;
@@ -108,13 +93,13 @@ margin-left: 1000px;
 #cast{
     justify-content: center;
     margin-left: 10px;
-    color: lightblue;
+    color: var(--hoverRed);
     
 }
 #crew{
     text-align: center;
     margin-left: 10px;
-    color: lightblue;
+    color: var(--hoverRed);
 }
 .castCrew{
     display: flex;
@@ -133,7 +118,7 @@ margin-left: 1000px;
 
 #my-list-box{
     float: left;
-    border: 3px double lightblue;
+    border: 3px double var(--hoverRed);
     color: black;
     padding: 8px;
     width: 250px;
@@ -142,11 +127,11 @@ margin-left: 1000px;
 }
 
 #trailer-box, #currentEvents{
-    border: 4px solid lightblue;
+    border: 4px solid var(--hoverRed);
     width: 36rem;
     height: 25rem;
     text-align: center;
-    color: lightblue;
+    color: var(--hoverRed);
     justify-content: center;
    
 
@@ -177,7 +162,7 @@ margin-left: 1000px;
 }
 
 
-/****MODAL*****/
+/*MODAL*/
 .modal {
     display: none;
     /* Hidden by default */
@@ -207,34 +192,11 @@ margin-left: 1000px;
     padding-top: 1rem;
 }
 
-/****MODAL*****/
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(224, 214, 187);
-    /* Fallback color */
-    background-color: rgba(110, 106, 94, 0.4);
-    /* Black w/ opacity */
-}
 
 /* Modal Content */
 .modal-content {
     background-color: #333333;
-    border: 5px double lightblue;
+    border: 5px double var(--red);
     margin: auto;
     padding: 20px;
     width: 80%;
@@ -245,7 +207,7 @@ margin-left: 1000px;
 
 /* The Close Button */
 .close {
-    color: lightblue;
+    color: var(--red);
     float: right;
     font-size: 32px;
     font-weight: bold;
@@ -298,11 +260,11 @@ margin-left: 1000px;
 }
 
 a {
-    color:lightblue;
+    color:var(--red);
 }
 a:hover {
     text-decoration: underline;
-    color: mediumaquamarine;
+    color: var(--hoverRed);
 }
 /* SIGN UP/IN  */
   form{
@@ -368,7 +330,7 @@ a:hover {
   }
   
   .button:hover{
-    background-color: #959aa0 ;
+    background-color: var(--hoverRed) ;
   }
   
   
@@ -380,17 +342,17 @@ a:hover {
   }
 
   .fa-solid{
-    color: #e15c5c;
+    color: var(--red);
   }
   .fa-solid:hover{
-    color: #d68c8c;
+    color: var(--hoverRed);
   }
   
 .divider {
     display: flex;
     justify-content: center;
     font-size: 40px;
-    background-color: #343a40;
+    background-color: var(--red);
     color: white;
     margin-bottom: 25px;
     font-weight: bold;
