@@ -1,10 +1,10 @@
 :root{
     --bg: #c6c7c7;
-    --containerbg: #d68cbf;
+    --containerbg: #7775767b;
     --grey:#b1b4b6;
     --darkgrey:#292d30;
-    --red:#9f0000;
-    --hoverRed:#d195958b;
+    --red:#66070795;
+    --hoverRed:#d195959a;
 }
 html, body{
     margin:0;
