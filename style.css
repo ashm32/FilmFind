@@ -5,8 +5,8 @@
     --darkgrey:#292d30;
     --red:#fff1b3;
     --hoverRed:#d195959a;
-    --white: var(--white)
 }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -20,7 +20,12 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }  
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: rotateY(180deg);
+  }
 
 .imagesCard {
     width: 100vw;
@@ -101,22 +106,21 @@ html, body {
 
 }
 
-.body-box{
+.body-box {
     box-sizing: border-box;
     border: 4px solid var(--darkgrey);
     border-style: solid;
-    width:25rem;
+    width: 25rem;
     height: 50rem;
     float: inline-start;
     font-size: 1.2rem;
-    color:black;
-    width: 40rem ;
-  
+    color: black;
+    width: 40rem;
     display: block;
-
     margin: 1rem;
-   
-}
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }  
 
 #actor{
     font-weight: 200;
@@ -156,28 +160,30 @@ html, body {
     
 }
 
-#my-list-box{
+#my-list-box {
     float: left;
     border: 3px double var(--darkgrey);
     color: black;
     padding: 8px;
     width: 250px;
     font-size: 20px;
-
-}
-
-#trailer-box, #currentEvents{
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #trailer-box,
+  #currentEvents {
     border: 4px solid var(--darkgrey);
     width: 36rem;
     height: 25rem;
     text-align: center;
     color: var(--darkgrey);
     justify-content: center;
-   
-
     display: block;
-
-}
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
 
 #body{
     display: flex;
