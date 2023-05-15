@@ -3,35 +3,61 @@
     --containerbg: #7775767b;
     --grey:#b1b4b6;
     --darkgrey:#292d30;
-    --red:#66070795;
+    --red:#fff1b3;
     --hoverRed:#d195959a;
+    --white: var(--white)
 }
-html, body{
-    margin:0;
-    padding:0;
-    background-color: var(--bg);
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url('top6/newbackground.jpg.avif');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 10);
     font-family: 'Verdana', 'Arial', 'Tahoma', 'Serif';
+  }  
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }  
+
+.divider{
+    color: black;
 }
 
-.logo{
-margin-left: 700px;
-}
-
-  .imagesCard {
+.imagesCard {
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 20px;
   }
-
-  .card {
-    display: inline-flex;
-    justify-content: space-around;
+  
+  .card-container {
+    display: flex;
+    flex-direction: row;
   }
+  
+  .card {
+    width: 18rem;
+    margin: 0 10px;
+  }
+  
 
   .card-title {
     font-weight: bold;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .card-body .btn {
+    margin-top: auto;
   }
 
 .movieTitle{
@@ -111,13 +137,13 @@ margin-left: 700px;
 #cast{
     justify-content: center;
     margin-left: 10px;
-    color: var(--darkgrey);
+    color: var(--white);
     
 }
 #crew{
     text-align: center;
     margin-left: 10px;
-    color: var(--darkgrey);
+    color: var(--white);
 }
 .castCrew{
     display: flex;
