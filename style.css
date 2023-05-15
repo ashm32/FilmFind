@@ -137,13 +137,11 @@ html, body {
 #cast{
     justify-content: center;
     margin-left: 10px;
-    color: var(--white);
     
 }
 #crew{
     text-align: center;
     margin-left: 10px;
-    color: var(--white);
 }
 .castCrew{
     display: flex;
