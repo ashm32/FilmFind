@@ -17,6 +17,23 @@ html, body{
 margin-left: 700px;
 }
 
+  .imagesCard {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
+
 .movieTitle{
    display:flex;
    text-align: center;
