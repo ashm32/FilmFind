@@ -27,6 +27,15 @@ html, body {
     transform: rotateY(180deg);
   }
 
+  .divider {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background-color: white;
+    color: white;
+    margin-bottom: 25px;
+  }
+
 .imagesCard {
     width: 100vw;
     display: flex;
@@ -44,7 +53,6 @@ html, body {
     width: 18rem;
     margin: 0 10px;
   }
-  
 
   .card-title {
     font-weight: bold;
@@ -55,10 +63,6 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-  }
-
-  .card-body .btn {
-    margin-top: auto;
   }
 
 .movieTitle{
@@ -310,112 +314,177 @@ a:hover {
     text-decoration: underline;
     color: var(--red);
 }
-/* SIGN UP/IN  */
-  form{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    padding: 0rem 5rem;
-    overflow: hidden;
-    }
+
+/* SIGN UP/IN *******************************/ 
+
+.container{ 
+  font-family: "Poppins", sans-serif;
+  /* width: 100%;
+  min-height: 100%; */
+  position: relative;
   
+}
+
+.form-sign-action{
+/* position:absolute; */
+  width:auto;
+  height: auto;
+  align-items:center;
+  justify-content: center;
+  display:contents;
+  flex-direction: column;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 2rem 5rem;
+  overflow: hidden;
+}
  
-    .message {
-      font-size: 1.2rem;
-      color: rgb(78, 78, 78);
-      margin-bottom: 10px;
-    }
-    
-    .input {
-      max-width: 380px;
-      width: 100%;
-      background-color: #f1cac8;
-      margin: 10px 0;
-      height: 55px;
-      border-radius: 40px;
-      display: grid;
-      grid-template-columns: 15% 85%;
-      padding: 0 0.4rem;
-      position: relative;
-    }
-    
-    .input i {
-      text-align: center;
-      line-height: 60px;
-      color:  rgb(208, 110, 110);
-      transition: 0.5s;
-      font-size: 1.1rem;
-    }
+.message {
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+  background-color: #ffffff;
+}
+
+.message-reset {
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+  background-color: #ffffff;
+}
   
-      
-    .input input {
-      background: none;
-      outline: none;
-      border: none;
-      line-height: 1;
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: var(--darkgrey);
-    }
-    
-  
-  
-  .button{
-    width: 120px;
-    height: 20;
-    border: none;
-    border-radius: 30px;
-    outline:none;
-    color: var(--darkgrey));
-    background-color: var(--red);
-    cursor: pointer;
-    transition: 1s;
+.input {
+  max-width: 380px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 40px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
   }
   
-  .button:hover{
-    background-color: var(--hoverRed) ;
-  }
+.input i {
+  text-align: center;
+  line-height: 60px;
+  color: #85cffa;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+    
+.input input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: rgb(78, 78, 78);
+}
   
-  
-  .account {
-    display: grid;
-    grid-template-columns: 1fr;
+.button{
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  outline:none;
+  color: rgb(78, 78, 78);
+  background-color: #85cffa;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button:hover{
+  background-color: #2d89be ;
+  box-shadow: 0 12px 20px 0 rgb(112, 112, 112);
+  cursor: pointer;
+  font-weight: 400%;
+}
+
+.sign-up-in {
+  display: grid;
+  grid-template-columns: 2fr;
   grid-column: 1/2;
   grid-row: 1/2;
-  }
+}
 
-  .fa-solid{
-    color: var(--darkgrey);
-  }
-  .fa-solid:hover{
-    color: var(--red);
-  }
-  
-.divider {
-    display: flex;
+.button-login{
+  width: 120px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  outline:none;
+  color: rgb(78, 78, 78);
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button-login:hover{
+  background-color: #2d89be ;
+  box-shadow: 0 12px 20px 0 rgb(112, 112, 112);
+  cursor: pointer;
+  font-weight: 400%;
+}
+
+.log-in{
+  display:flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.form-sign-action{
+  /* position:absolute; */
+    width:auto;
+    height: auto;
+    align-items:center;
     justify-content: center;
-    font-size: 40px;
-    background-color: var(--red);
-    color: white;
-    margin-bottom: 25px;
-    font-weight: bold;
-  }
-
-  .imagesCard {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    display: inline-flex;
-    justify-content: space-around;
-  }
-
-  .card-title {
-    font-weight: bold;
-  }
+    display:contents;
+    flex-direction: column;
   
+  }
+
+/* index_signin_up FORM style */
+.popup{
+  position:absolute;
+  background-color: #cee3f1;
+  color: #2d89be;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  padding: 40px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) scale(0.1);
+  left: 50%;
+  top: 0%;
+  visibility:hidden;
+  transition: transform 0.5s, top0.5s;
+}
+
+.show-popup{
+  visibility:visible;
+  top: 70%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h3{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+}
+
+.popup button{
+  width: 80%;
+  background-color: #2d89be ;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 12px 20px 0 rgb(112, 112, 112);
+}

@@ -27,20 +27,12 @@
     </a>
   </div>
 
-
-<!-- Account page -->
-<div class="accountContainer">
-  <div class="row">
-    <div class="col-lg-6 h-100 text-center mx-auto">
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item mr-1">
-          <a href="account.html">
-            <i class="fa-solid fa-user fa-2xl"></i></a>
-          </li>
-      </ul>
-    </div>
+<!-- SIGN IN/UP BUTTON  --> 
+  <div class="log-in">
+    <a href="account.html">     <!-- Transfer to Log In options  --> 
+      <input type="submit" value="LOG IN" class="button-login solid"> 
+    </a>
   </div>
-</div>
 
   <div class="navbar">
       <div id="navbar-items">
@@ -70,7 +62,23 @@
     </div>
 
     <section class="body-box">
-      <button id="add-my-list">Add to My List</button>
+      <!-- PROMPT TO LOG IN --> 
+    <button id="add-my-list" onclick="showPopup()" >Add to My List</button>
+    
+    <!--When the user clicks on button id="add-my-list" it opens the popup--> 
+      <div class="popup" id="popup">
+        <h3>Please log in to save this movie to Watch List</h3>
+      <div>   
+      <button type="button" onclick="closePopup()">NO, THANK YOU</button>
+      </div>
+      <br/>
+      <div>  
+       <a href="account.html">    <!-- Transfer to Log In options  --> 
+        <button type="button" onclick="closePopup()">GO TO LOG IN</button>
+      </div>
+    </div>
+    
+    
       <h2 class="movieTitle py-6 my-8 mt-4 pb-5"></h2>
       <article class="castCrew">
         <h2 id="actor">Starring:</h2>
@@ -82,7 +90,6 @@
         <ul id="crew"></ul>
       </article>
       <div id="poster"> <!-- For Poster --> </div>
-
 
     </section>
 
@@ -110,66 +117,60 @@
   <!-- Bootstrap cards -->
   <div class="divider" id="my-projects" style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
     <div style="color: black; text-decoration: none;">Our Top 6 of the month</div>
-  </div>  
+  </div>
 
   <div class="imagesCard">
     <div class="card-container">
       <div class="card" style="width: 18rem;">
-        <img src="./top6/suzume.jpeg" class="card-img-top" alt="an image with gold and black background with written project 1 inside a white square in the center of the image">
+        <img src="./top6/suzume.jpeg" class="card-img-top" alt="an anime with a girl and a boy opening a door from a different dimension">
         <div class="card-body">
           <h5 class="card-title">Top 1 - Suzume</h5>
           <p class="card-text">Suzume sees director Makoto Shinkai falling just a bit short of the bar set by but when the results are this impactful, it's hard to find much fault.</p>
-          <button class="btn btn-primary">Add to List</button>
         </div>
       </div>
   
       <div class="card" style="width: 18rem;">
-        <img src="./top6/loveagain.jpeg" class="card-img-top" alt="an image with gold and black background with written project 2 inside a white square in the center of the image">
+        <img src="./top6/loveagain.jpeg" class="card-img-top" alt="a man and a woman hugged and smiling in new york">
         <div class="card-body">
           <h5 class="card-title">Top 2 - Love Again</h5>
           <p class="card-text">What if a random text message led to the love of your life? In this romantic comedy, dealing with the... [Read More]</p>
-          <button class="btn btn-primary">Add to List</button>
         </div>
       </div>
     </div>
   
     <div class="card-container">
       <div class="card" style="width: 18rem;">
-        <img src="./top6/discontinued.jpeg" class="card-img-top" alt="an image with gold and black background with written project 3 inside a white square in the center of the image">
+        <img src="./top6/discontinued.jpeg" class="card-img-top" alt="a man and a woman with three silver balls behind them reflecting what's in front of them">
         <div class="card-body">
           <h5 class="card-title">Top 3 - Discontinued</h5>
           <p class="card-text">With an AI guide, Sarah navigates the end of the world as she knows it while charting an unlikely course toward self-actualization.</p>
-          <button class="btn btn-primary">Add to List</button>
         </div>
       </div>
   
       <div class="card" style="width: 18rem;">
-        <img src="./top6/peterpan.jpeg" class="card-img-top" alt="an image with gold and black background with written project 4 inside a white square in the center of the image">
+        <img src="./top6/peterpan.jpeg" class="card-img-top" alt="peter pan, wendy and captain hook on a boat">
         <div class="card-body">
           <h5 class="card-title">Top 4 - Peter Pan & Wendy</h5>
           <p class="card-text">Fidelity to the animated classic from achieving Neverland, giving rendition some of its own magic.</p>
-          <button class="btn btn-primary">Add to List</button>
         </div>
       </div>
     </div>
   
     <div class="card-container">
       <div class="card" style="width: 18rem;">
-        <img src="./top6/65.jpeg" class="card-img-top" alt="an image with gold and black background with written project 5 inside a white square in the center of the image">
+        <img src="./top6/65.jpeg" class="card-img-top" alt="a man in the wood with a t-rex skull behind him">
         <div class="card-body">
           <h5 class="card-title">Top 5 - 65</h5>
           <p class="card-text">After a catastrophic crash on an unknown planet, pilot Mills quickly discovers he’s actually stranded on Earth 65 million years ago.</p>
-          <button class="btn btn-primary">Add to List</button>
         </div>
       </div>
 
       <div class="card-container">
         <div class="card" style="width: 18rem;">
-          <img src="./top6/theartificegirl.jpeg" class="card-img-top" alt="an image with gold and black background with written project 5 inside a white square in the center of the image">
+          <img src="./top6/theartificegirl.jpeg" class="card-img-top" alt="a blue eye with a tear going down her cheek">
           <div class="card-body">
             <h5 class="card-title">Top 6 - The Artifice Girl</h5>
             <p class="card-text">This movie blends timely themes and a sci-fi structure to explore thought-provoking questions surrounding the ethics of artificial intelligence.</p>
-            <button class="btn btn-primary">Add to List</button>
           </div>
         </div>
     </div>

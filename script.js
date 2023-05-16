@@ -220,6 +220,15 @@ function addMyList() {
     }
 }
 
+//POPUP TO BE SHOWN AND HIDDEN WHEN BUTTON CLICKED
+var popup = document.getElementById('popup');
+    
+function showPopup(){
+popup.classList.add('show-popup');
+}
+function closePopup(){
+popup.classList.remove('show-popup');
+}
 
 //For my list button (hide / display)
 myListBtnEl.addEventListener('click', function(){
@@ -251,6 +260,5 @@ myListEl.addEventListener("click", function(event) {
     event.preventDefault;
     var movie = event.target.innerHTML;
     var title = movie.split('(')[0];
-
     queryOMDB(title)
 })
