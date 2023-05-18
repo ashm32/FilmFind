@@ -166,6 +166,16 @@ var form = document.querySelector('#searchForm');
      getWikiArticle(movie.Year);
  }
 
+//POPUP TO BE SHOWN AND HIDDEN WHEN BUTTON CLICKED
+ var popup = document.getElementById('popup');
+
+ function showPopup(){
+ popup.classList.add('show-popup');
+ }
+ function closePopup(){
+ popup.classList.remove('show-popup');
+ }
+
  function getUserInput(event) {
      event.preventDefault();
 
